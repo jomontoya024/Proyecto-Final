@@ -1,0 +1,203 @@
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Fondo específico para cada página */
+body.index {
+    background-image: url('Mascota11.jpg');
+}
+
+body.acerca {
+    background-image: url('MascotaFondo2.jpg');
+}
+
+body.ayuda {
+    background-image: url('ayudaMascota.jpg');
+}
+
+body.blog {
+    background-image: url('MascotaFondo3.jpg');
+}
+
+body.contacto {
+    background-image: url('MascotaPortada.jpg');
+}
+
+body.donaciones {
+    background-image: url('MascotaFondo4.jpg');
+}
+
+body.eventos {
+    background-image: url('Mascota12.jpg');
+}
+
+body.galeria {
+    background-image: url('Mascota2.jpg');
+}
+
+body.preguntas {
+    background-image: url('MascotaFondo5.jpg');
+}
+
+body.programas {
+    background-image: url('MascotaPortada.jpg');
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #4CAF50; /* Verde para "Hogar Para Mascotas" */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegurar que las imágenes no se salgan del cuadro blanco */
+main img {
+    max-width: 100%; /* Imagen no puede ser más grande que su contenedor */
+    height: auto; /* Mantiene las proporciones */
+    display: block;
+    margin: 10px auto; /* Centra la imagen */
+    border-radius: 10px;
+    border: 3px solid #4CAF50; /* Borde verde */
+}
+
+/* Pie de página */
+footer {
+    margin-top: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo general para la sección de Programas y Proyectos */
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre los cuadros */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones suaves para interacciones */
+}
+
+section:hover {
+    transform: scale(1.02); /* Escala ligeramente el cuadro cuando el cursor pasa por encima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Estilo para los títulos de cada programa, evento y pregunta */
+section h3 {
+    font-size: 24px; /* Título destacado */
+    color: #4CAF50; /* Color verde para los títulos */
+    margin-bottom: 10px; /* Espaciado debajo del título */
+}
+
+/* Estilo para los párrafos dentro de las secciones */
+section p {
+    font-size: 16px; /* Tamaño de fuente legible */
+    color: #555; /* Color gris para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+}
+
+/* Asegurar que las imágenes dentro de las secciones no se desborden */
+section img {
+    max-width: 100%; /* Imagen no puede exceder el tamaño del cuadro */
+    height: auto; /* Mantener las proporciones */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilo específico para la sección de eventos */
+section.eventos {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo más suave para eventos */
+    padding: 30px; /* Mayor espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilo específico para la sección de preguntas */
+section.preguntas {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo más suave para preguntas */
+    padding: 30px; /* Mayor espaciado interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilo para las listas de preguntas y eventos */
+ul.lista-eventos, ul.lista-preguntas {
+    list-style: none;
+    padding-left: 20px;
+}
+
+ul.lista-eventos li, ul.lista-preguntas li {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+ul.lista-eventos li strong, ul.lista-preguntas li strong {
+    color: #4CAF50; /* Verde para los encabezados dentro de las listas */
+}
+
+/* Estilo para las preguntas frecuentes */
+ul.lista-preguntas li {
+    font-style: italic; /* Cursiva para las preguntas */
+    color: #555; /* Gris suave */
+}
+
+ul.lista-preguntas li:hover {
+    color: #4CAF50; /* Cambiar el color a verde al pasar el mouse */
+}
